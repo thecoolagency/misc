@@ -157,15 +157,15 @@
     /* titles */
 
     .title--primary {
-
+        font-style: normal;
     }
 
     .title--secondary {
-        
+        font-style: normal;   
     }
 
     .title--tertiary {
-        
+        font-style: normal;
     }
 
     /* global */
@@ -891,3 +891,29 @@
 
 /* ######################################
     9. Extra */
+      
+    @media screen and ( min-width: 749px ) {
+        .d.fit-x {
+            width:-webkit-fit-content;
+            width:-moz-fit-content;
+            width:fit-content;
+        }
+        .d.fit-y {
+            width:-webkit-fit-content;
+            width:-moz-fit-content;
+            width:fit-content;
+        }
+    }
+          
+    @media screen and ( max-width: 749px ) {
+        .m.fit-x {
+            width:-webkit-fit-content;
+            width:-moz-fit-content;
+            width:fit-content;
+        }
+        .m.fit-y {
+            width:-webkit-fit-content;
+            width:-moz-fit-content;
+            width:fit-content;
+        }
+    }
