@@ -103,6 +103,15 @@
         background-color: rgba(0, 0, 0, .1);
     }
 
+    .oos {
+        position: absolute!important;
+        height: 1px!important;
+        width: 1px!important;
+        margin: 0!important;
+        padding: 0!important;
+        overflow: hidden!important;
+    }
+
 /* ######################################
     2. Helpers */
 
