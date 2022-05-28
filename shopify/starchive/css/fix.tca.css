@@ -353,7 +353,7 @@
         max-width: calc(100%);
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 749px) {
         .container {
             overflow: auto;
         }
@@ -771,7 +771,7 @@
         }
     }
 
-    @media screen and ( max-width: 768px ) {
+    @media screen and ( max-width: 749px ) {
 
         .m-flx {
             display: -webkit-box;
@@ -952,7 +952,7 @@
         }
     }
 
-    @media screen and ( max-width: 768px ) {
+    @media screen and ( max-width: 749px ) {
     
         .m-rel { position: relative; }
         .m-abs { position: absolute; }
