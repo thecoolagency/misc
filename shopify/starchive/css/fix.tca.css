@@ -144,21 +144,86 @@
         margin-right: auto;
     }
 
-    .invisible {
+    @media screen and (min-width: 750px) {
+
+        .d-mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    @media screen and (max-width: 749px) {
+
+        .m-mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .opacity {
         opacity: 0;
     }
 
-    .visible {
+    .opacity-1 { 
         opacity: 1;
     }
 
-    .blk {  display: block; }
-    .nbl {  display: inline-block; }
-    .nln {  display: inline; }
-
-    .ft-0 {
-        font-size: 0;
+    .block {
+        display: block;
     }
+
+    .inline-block {
+        display: inline-block;
+    }
+
+    .inline {
+        display: inline;
+    }
+
+    .grid {
+        display: grid;
+    }
+
+    @media screen and (min-width: 750px) {
+
+        .d-block {
+            display: block!important;
+        }
+        
+        .d-inline-block {
+            display: inline-block!important;
+        }
+        
+        .d-inline {
+            display: inline!important;
+        }
+        
+        .d-grid {
+            display: grid!important;
+        }
+    }
+
+    @media screen and (max-width: 749px) {
+
+        .m-block {
+            display: block!important;
+        }
+        
+        .m-inline-block {
+            display: inline-block!important;
+        }
+        
+        .m-inline {
+            display: inline!important;
+        }
+        
+        .m-grid {
+            display: grid!important;
+        }
+    }
+
+
+    .fs-0 { font-size: 0; }
 
 /* ######################################
     3. Typography */
@@ -188,11 +253,15 @@
     .wgt-800 { font-weight: 800; }
     .wgt-900 { font-weight: 900; }
 
+    .left {   text-align: left; }
+    .center { text-align: center; }
+    .right {  text-align: right; }
 
-
-.left {   text-align: left; }
-.center { text-align: center; }
-.right {  text-align: right; }
+    @media screen and ( min-width: 750px ) {
+        .d-left {   text-align: left; }
+        .d-center { text-align: center; }
+        .d-right {  text-align: right; }
+    }
 
     @media screen and ( max-width: 749px ) {
         .m-left {   text-align: left; }
@@ -221,6 +290,32 @@
                 box-shadow: unset;
     }
 
+    .reset-btn:after {
+        background: none;
+        color: inherit;
+        border: none;
+        font: inherit;
+        font-size: 1rem;
+        line-height: 1rem;
+        cursor: pointer;
+        outline: inherit;
+        -webkit-box-shadow: unset;
+                box-shadow: unset;
+    }
+
+    .reset-btn:before {
+        background: none;
+        color: inherit;
+        border: none;
+        font: inherit;
+        font-size: 1rem;
+        line-height: 1rem;
+        cursor: pointer;
+        outline: inherit;
+        -webkit-box-shadow: unset;
+                box-shadow: unset;
+    }
+
 /* ######################################
     4. Grid */
 
@@ -228,8 +323,6 @@
       display: -webkit-box; 
       display: -ms-flexbox; 
       display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
     }
 
     .column {
@@ -685,12 +778,12 @@
                     flex: 1;
     }
 
-    .flx.nwrp {
+    .nwrp {
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
     }
 
-    .flx.wrp {
+    .wrp {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     }
